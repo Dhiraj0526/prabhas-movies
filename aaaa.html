@@ -1,0 +1,220 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PRABHAS Movies</title> 
+  <style> 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("https://wallpapers.oneindia.com/ph-1024x768/2018/10/prabhas_154027262520.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #ffffff;
+    }
+    header {
+      background-color: #070707;
+      padding: 5px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;  
+      color: #ffcc00;
+    }
+    header input {
+      margin-top: 15px;
+      padding: 10px;
+      font-size: 1rem;
+      width: 250px;
+      border: 2px solid #ffcc00;
+      border-radius: 5px;
+      background-color: #070707;
+      color: white;
+    }
+
+    .genre-section {
+      margin: 30px;
+    }
+    .genre-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+    .movie-container {
+      position: relative;
+      overflow: hidden; /* Add this */
+    }
+
+    .movie-section {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 10px 0;
+      scrollbar-width: none; /* Firefox */
+    }
+    .movie-section::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+    .movie-card {
+      background-color: #000000;
+      border-radius: 10px;
+      margin-right: 15px;
+      width: 200px;
+      text-align: center;
+      flex: 0 0 auto;
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+    .movie-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .movie-card h3 {
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #000000;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>🎬 PRABHAS</h1>
+    <p>Your gateway to epic cinema!</p>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchBar" placeholder="Search movies..." onkeyup="searchMovies()">
+  </header>
+
+  <!-- Genre 1 -->
+  <div class="genre-section">
+    <div class="genre-title">Mythological & Fantasy</div>
+    <div class="movie-container">
+      <div class="movie-section" id="genre1">
+      <a href="kalki.html"> 
+        <div class="movie-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTM3ZGUwYTEtZTI5NS00ZmMyLTk2YmQtMWU4YjlhZTI3NjRjXkEyXkFqcGc@.V1.jpg" alt="Kalki">
+          <h3>Kalki</h3>
+        </div>
+    </a> 
+        <div class="movie-card">
+          <img src="https://naasongs.com.co/wp-content/uploads/2023/04/Adipurush-2023.jpg" alt="Adipurush">
+          <h3>Adipurush</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Baahubali_The_Beginning_poster.jpg" alt="Bahubali 1">
+          <h3>Bahubali 1</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjoGk52Nh5Gto6nac-cuSZexkXMeeqLcCq4g&s" alt="Bahubali 2">
+          <h3>Bahubali 2</h3>         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Genre 2 -->
+  <div class="genre-section">
+    <div class="genre-title">Action & Thriller</div>
+    <div class="movie-container">
+      <div class="movie-section" id="genre2">
+        <div class="movie-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BYmNlM2NkNzEtODAwOS00MTFjLTljODAtNjJjODdhZjI5MGYzXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg" alt="Saaho">
+          <h3>Saaho</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://preview.redd.it/salaar-part-1-ceasefire-2023-review-discussion-thread-v0-eadyubvvp57c1.jpg?width=1740&format=pjpg&auto=webp&s=efc68fcac2af55c4b0feabe58d52239d7668d5b4" alt="Salaar">
+          <h3>Salaar</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmypAURHb2R2QaSgTkpBKRcdDflKJW3UpvQ&s" alt="Rebel">
+          <h3>Rebel</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BNGFlYTI5NGMtYWQ0OS00NDRhLWEzMzItMGI0ODJiMjE5YzgxXkEyXkFqcGc@.V1.jpg" alt="Chatrapathi">
+          <h3>Chatrapathi</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTY5MTIwMDg0N15BMl5BanBnXkFtZTgwNjA3OTcwMzE@.V1.jpg" alt="Billa">
+          <h3>Billa</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/eeshwar-et00415727-1728640635.jpg" alt="Eeswar">
+          <h3>Eeswar</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/2/20/Raghavendra_poster.jpg" alt="Raghavendra">
+          <h3>Raghavendra</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfkLj5UoPfLrLIT8vOtfk7OqA_dglMFM9lhQ&s" alt="Yogi">
+          <h3>Yogi</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Genre 3 -->
+  <div class="genre-section">
+    <div class="genre-title">Romantic & Drama</div>
+    <div class="movie-container">
+      <div class="movie-section" id="genre3">
+        <div class="movie-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BZWMxNjE4MjMtOGIxMS00YTliLWI5YzgtYjQ2NzNhMDIzYjRiXkEyXkFqcGc@.V1.jpg" alt="Darling">
+          <h3>Darling</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://m.media-amazon.com/images/S/pv-target-images/9b6d53d10d7261e2545e085bf63c1658fca0d44dffc804aa3d5eba9074ff9a15.jpg" alt="Mr Perfect">
+          <h3>Mr Perfect</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Radhe_Shyam_Album.jpg" alt="Radhe Shyam">
+          <h3>Radhe Shyam</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtI9FyZoGNCV7S6qimFNJdEE7h82gRoiJfKw&s" alt="Mirchi">
+          <h3>Mirchi</h3>
+        </div>
+        <div class="movie-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQexAYIV8fRsyC_xKEZlpMwhZJXY-csx3SNUg&s" alt="Pournami">
+          <h3>Pournami</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 PRABHAS Fanbase. All rights reserved.
+  </footer>
+
+  <script>
+    function searchMovies() {
+      var input = document.getElementById('searchBar').value.toLowerCase();
+      var movieCards = document.querySelectorAll('.movie-card');
+
+      movieCards.forEach(function(card) {
+        var title = card.querySelector('h3').textContent.toLowerCase();
+        if (title.includes(input)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
